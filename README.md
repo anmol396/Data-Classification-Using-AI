@@ -1,57 +1,148 @@
-# Data Classification Using AI
+# Data-Classification-Using-AI
 
-A clean, beginner-friendly AI classification project using the classic Iris dataset from `scikit-learn` and a Decision Tree Classifier.
+<div align="center">
 
-## Objective
-To build a basic, step-by-step machine learning workflow including dataset loading, understanding, exploratory data analysis (EDA), plotting visualizations, training a model, evaluating accuracy, and inspecting predictions.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python\&logoColor=white)](https://www.python.org/)
 
-## Dataset
-- **Name**: Iris Dataset (from `sklearn.datasets`)
-- **Records**: 150 (50 per species)
-- **Features**: Sepal Length, Sepal Width, Petal Length, Petal Width
-- **Classes**: setosa, versicolor, virginica
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?logo=scikitlearn\&logoColor=white)](https://scikit-learn.org/)
 
-## Algorithm
-- **Decision Tree Classifier**: A supervised learning algorithm used for classification. The model tree depth is restricted to `max_depth=3` to control complexity and prevent overfitting.
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas\&logoColor=white)](https://pandas.pydata.org/)
 
-## Accuracy
-- **Training Accuracy**: 95.83%
-- **Testing Accuracy**: 100.00%
+[![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy\&logoColor=white)](https://numpy.org/)
 
-## Visualizations
-The script creates and saves the following plots in the `graphs/` folder:
-- `histogram.png`: Shows feature distribution by species.
-- `boxplot.png`: Shows feature spreads by species.
-- `heatmap.png`: Correlation matrix heatmap.
-- `pairplot.png`: Pairwise relationship grids.
-- `scatterplot.png`: Petal length vs Petal width scatterplot.
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C)](https://matplotlib.org/)
 
-## Results
-- The model successfully classifies test instances with 100.00% accuracy.
-- An **Overfitting Check** is performed to ensure the difference between training and testing accuracy does not indicate significant generalization error.
-- Detailed classification reports and confusion matrices are printed to the console.
-- Feature importances show that petal features are the most critical predictors.
+[![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-4C72B0)](https://seaborn.pydata.org/)
 
-## Installation
-Ensure you have Python installed, then install the required dependencies:
-```bash
-pip install -r requirements.txt
+</div>
+
+<br>
+
+A beginner-friendly machine learning classification project that predicts Iris flower species using a **Decision Tree Classifier**.
+
+This project demonstrates a complete ML workflow including **data loading, exploratory data analysis (EDA), visualization, model training, evaluation, prediction, and performance analysis**.
+
+---
+
+# Project Overview
+
+This project performs end-to-end classification using the Iris dataset and covers the complete machine learning pipeline.
+
+The system:
+
+* Loads and explores data
+* Generates visual analysis
+* Trains a classification model
+* Evaluates prediction performance
+* Produces graphs and insights
+
+---
+
+# Key Highlights
+
+* Complete machine learning workflow
+* Beginner-friendly implementation
+* Uses Decision Tree Classification
+* Multiple visualizations included
+* Performance evaluation and reporting
+* Feature importance analysis
+
+---
+
+# Dataset Information
+
+| Property      | Details                                              |
+| ------------- | ---------------------------------------------------- |
+| Dataset       | Iris Dataset                                         |
+| Source        | Scikit-learn                                         |
+| Total Records | 150                                                  |
+| Features      | Sepal Length, Sepal Width, Petal Length, Petal Width |
+| Classes       | Setosa, Versicolor, Virginica                        |
+
+---
+
+# Classification Model
+
+### Algorithm Used
+
+**Decision Tree Classifier**
+
+A supervised machine learning algorithm used to classify flower species based on feature values.
+
+### Model Configuration
+
+```text
+DecisionTreeClassifier(
+max_depth = 3
+)
 ```
 
-## How to Run
-Run the classification pipeline script:
-```bash
-python classification.py
+Model depth is restricted to reduce complexity and minimize overfitting.
+
+---
+
+# Project Workflow
+
+```text
+Load Dataset
+↓
+Data Exploration
+↓
+Data Visualization
+↓
+Train-Test Split
+↓
+Model Training
+↓
+Prediction
+↓
+Evaluation
+↓
+Performance Analysis
 ```
 
-## Folder Structure
-```
+---
+
+# Model Performance
+
+| Metric            |   Score |
+| ----------------- | ------: |
+| Training Accuracy |  95.83% |
+| Testing Accuracy  | 100.00% |
+
+Additional evaluation includes:
+
+* Classification Report
+* Confusion Matrix
+* Feature Importance
+* Overfitting Check
+
+---
+
+# Generated Visualizations
+
+| File              | Purpose                       |
+| ----------------- | ----------------------------- |
+| `histogram.png`   | Feature distribution          |
+| `boxplot.png`     | Feature spread analysis       |
+| `heatmap.png`     | Correlation analysis          |
+| `pairplot.png`    | Feature relationship analysis |
+| `scatterplot.png` | Petal comparison              |
+
+All graphs are stored inside the `graphs/` folder.
+
+---
+
+# Project Structure
+
+```text
 Data-Classification-Using-AI/
 │
-├── classification.py        # Main classification script
-├── README.md                # Documentation
-├── requirements.txt         # Dependencies
-└── graphs/                  # Generated plots
+├── classification.py
+├── README.md
+├── requirements.txt
+│
+└── graphs/
     ├── histogram.png
     ├── boxplot.png
     ├── heatmap.png
@@ -59,9 +150,70 @@ Data-Classification-Using-AI/
     └── scatterplot.png
 ```
 
-## Learning Outcomes
-- Load and inspect datasets using `pandas`.
-- Build visualizations using `matplotlib` and `seaborn`.
-- Prepare data and split it into training and testing sets.
-- Train and evaluate a Decision Tree classifier using `scikit-learn`.
-- Analyze model features and importance.
+---
+
+# Installation Guide
+
+Clone repository:
+
+```bash
+git clone https://github.com/anmol396/Data-Classification-Using-AI.git
+```
+
+Move to project folder:
+
+```bash
+cd Data-Classification-Using-AI
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Run Project
+
+```bash
+python classification.py
+```
+
+---
+
+# Technologies Used
+
+| Category         | Technology          |
+| ---------------- | ------------------- |
+| Language         | Python              |
+| Data Processing  | Pandas, NumPy       |
+| Machine Learning | Scikit-learn        |
+| Visualization    | Matplotlib, Seaborn |
+
+---
+
+# Learning Outcomes
+
+After completing this project:
+
+* Understand classification workflow
+* Build Decision Tree models
+* Perform exploratory data analysis
+* Evaluate model performance
+* Generate visual insights
+* Interpret feature importance
+
+---
+
+# Future Improvements
+
+* Add Random Forest comparison
+* Hyperparameter tuning
+* Interactive dashboard
+* Model deployment
+* Support additional datasets
+
+---
+
+Developed as part of **Project 2 – Data Classification Using AI**
