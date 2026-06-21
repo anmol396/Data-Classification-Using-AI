@@ -1,5 +1,5 @@
 # Data-Classification-Using-AI
-```md
+
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
